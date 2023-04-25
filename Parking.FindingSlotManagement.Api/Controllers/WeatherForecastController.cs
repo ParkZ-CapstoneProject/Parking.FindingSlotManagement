@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Parking.FindingSlotManagement.Api.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase

@@ -3,6 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Parking.FindingSlotManagement.Application.Contracts.Persistence;
 using Parking.FindingSlotManagement.Infrastructure.Persistences;
+using Parking.FindingSlotManagement.Infrastructure.Repositories;
 //using Parking.FindingSlotManagement.Infrastructure.Repositories;
 using System;
 using System.Collections.Generic;
@@ -21,6 +22,8 @@ namespace Parking.FindingSlotManagement.Infrastructure
 
             //services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             /*services.AddScoped<IProductRepository, ProductRepository>();*/
+            services.AddScoped<IAuthenticationRepository, AuthenticationRepository>();
+
             return services;
         }
     }
