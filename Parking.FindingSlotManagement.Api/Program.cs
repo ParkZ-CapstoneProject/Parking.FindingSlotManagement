@@ -102,7 +102,8 @@ builder.Services.AddLogging(config =>
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 string[] urlCors = new string[]
 {
-    "http://localhost:3000", 
+    "http://localhost:3000",
+    "http://localhost:3001",
     "https://deploy-react-app-to-azure.vercel.app", 
     "https://park-z-manager-web.vercel.app", 
     "https://parkz-admin-web-five.vercel.app",
